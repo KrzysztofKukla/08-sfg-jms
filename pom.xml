@@ -25,15 +25,17 @@
 			<artifactId>spring-boot-starter-artemis</artifactId>
 		</dependency>
 
-			<!-- it will be running on embedded server, we need two dependencies -->
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>artemis-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>artemis-jms-server</artifactId>
-		</dependency>
+			<!-- it will be running on embedded server, we need two dependencies
+			when we have any dependency Spring Boot automatically brings up autoconfiguration for those
+			to avoid that we need to disable embedded server - comment out for that -->
+<!--		<dependency>-->
+<!--			<groupId>org.apache.activemq</groupId>-->
+<!--			<artifactId>artemis-server</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.apache.activemq</groupId>-->
+<!--			<artifactId>artemis-jms-server</artifactId>-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
